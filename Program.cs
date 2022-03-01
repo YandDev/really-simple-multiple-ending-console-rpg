@@ -6,11 +6,10 @@ namespace workspace
 {   
 
 
-    class AsciiVariables
+class AsciiVariables
     {
 
 protected const string title = @"
-    .-') _     ('-. .-.    ('-.          .-') _      (`\ .-') /`   ('-.                           .-') _     ('-. .-. 
 (  OO) )   ( OO )  /  _(  OO)        (  OO) )      `.( OO ),' _(  OO)                         (  OO) )   ( OO )  / 
 /     '._  ,--. ,--. (,------.       /     '._  ,--./  .--.  (,------.  ,--.         ,------. /     '._  ,--. ,--. 
 |'--...__) |  | |  |  |  .---'       |'--...__) |      |  |   |  .---'  |  |.-')  ('-| _.---' |'--...__) |  | |  | 
@@ -21,8 +20,7 @@ protected const string title = @"
    `--'    `--' `--'  `------'          `--'    '--'   '--'   `------'  `------'     `--'        `--'    `--' `--' ";
         
         
-protected const string abt = @"   
-        ('-.     .-. .-')                              .-') _    
+protected const string abt = @"     
   ( OO ).-. \  ( OO )                            (  OO) )   
   / . --. /  ;-----.\   .-'),-----.  ,--. ,--.   /     '._  
   | \-.  \   | .-.  |  ( OO'  .-.  ' |  | |  |   |'--...__) 
@@ -45,9 +43,9 @@ protected const string StarrySky = @"
 
  .   +      .          ___/\_._/~~\_...__/\__.._._/~\        .         .   .
        .          _.--'                              `--./\          .   .
-           /~~\/~\                                         `-/~\_            .
- .      .-'                                                      `-/\_
-  _/\.-'                                                          __/~\/\-.__
+           /~~\/~\      `    |||      ~                    `-/~\_            .
+ .      .-'                                     .                `-/\_
+  _/\.-'       ;               ,                  ///            __/~\/\-.__
 .'                                                                           `.
 ";
 
@@ -132,11 +130,12 @@ protected const string StarrySky = @"
 
 
     class game : AsciiVariables
-    {
+{
 
-const string ActionPrompt = "What will you do?";
-int killCount = 0;
-int mercyCount = 0;
+
+private const string ActionPrompt = "What will you do?";
+private int killCount = 0;
+private int mercyCount = 0;
 
         
         public void Start()
@@ -232,56 +231,56 @@ int mercyCount = 0;
                 Thread.Sleep(3000);
                 Clear();
                 ForegroundColor = ConsoleColor.Yellow;
-                WriteLine("Warning");
-                Thread.Sleep(2000);
-                Clear();
-                Thread.Sleep(2000);
-                WriteLine("Warning");
-                Thread.Sleep(2000);
-                Clear();
-                Thread.Sleep(2000);
-                WriteLine("Warning");
-                Thread.Sleep(2000);
-                Clear();
-                Thread.Sleep(5000);
-                Clear();
-                ForegroundColor = ConsoleColor.Red;
-                WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                Thread.Sleep(1000);
-                Clear();
-                Thread.Sleep(1500);
-                WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                Thread.Sleep(1000);
-                Clear();
-                Thread.Sleep(1500);
-                WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                Thread.Sleep(1000);
-                Clear();
-                Thread.Sleep(1500);
-                WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                Thread.Sleep(1000);
-                Clear();
-                Thread.Sleep(1500);
-                WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                Thread.Sleep(1000);
-                Clear();
-                Thread.Sleep(1500);
-                WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                Thread.Sleep(1000);
-                Clear();
-                Thread.Sleep(1500);
-                WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                Thread.Sleep(1000);
-                Clear();
-                Thread.Sleep(1500);
-                WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                Thread.Sleep(1000);
-                Clear();
-                Thread.Sleep(1500);
-                WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                Thread.Sleep(1000);
-                Clear();
-                Thread.Sleep(5000);
+                // WriteLine("Warning");
+                // Thread.Sleep(2000);
+                // Clear();
+                // Thread.Sleep(2000);
+                // WriteLine("Warning");
+                // Thread.Sleep(2000);
+                // Clear();
+                // Thread.Sleep(2000);
+                // WriteLine("Warning");
+                // Thread.Sleep(2000);
+                // Clear();
+                // Thread.Sleep(5000);
+                // Clear();
+                // ForegroundColor = ConsoleColor.Red;
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(1500);
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(1500);
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(1500);
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(1500);
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(1500);
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(1500);
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(1500);
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(1500);
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(5000);
                 ResetColor();
 
                 WriteLine("Successfully transported to THE INBETWEEN.");
@@ -290,7 +289,7 @@ int mercyCount = 0;
                 Thread.Sleep(2000);
                 
                 string prompt = "There is some sort of bulletin board..";
-                string[] options = {"Read the first paper", "Read the second paper", "Read the third paper", "Walk on..."};
+                string[] options = {"Read the paper","Walk on..."};
                 Menu Inbetween1 = new Menu(prompt, options);
                 int selectedIndex = Inbetween1.Run();
 
@@ -303,29 +302,12 @@ int mercyCount = 0;
                     WriteLine("Have 'fun'\nYour's Truly,\nThe Universe");
                     ReadKey();
                     Clear();
-                    Inbetween1.Run();
+                    Thread.Sleep(2000);
+                    WalkOn();
 
-                    break;
-                    
+                    break;  
+
                     case 1:
-                    WriteLine("The News(tm)\n");
-                    WriteLine("Entertainment Section");
-                    WriteLine("*It's empty...");
-                    ReadKey();
-                    Clear();
-                    Inbetween1.Run();
-                    break;
-                    
-                    case 2:
-                    WriteLine("The News(tm)\n");
-                    WriteLine("General Section");
-                    WriteLine("Folk tries to escape THE INBETWEEN. Never seen again\n Did he escape? Find out.. only if you have the guts");
-                    ReadKey();
-                    Clear();
-                    Inbetween1.Run();
-                    break;
-
-                    case 3:
                     WalkOn();
                     break;
                 }
@@ -337,15 +319,15 @@ int mercyCount = 0;
         WriteLine("* You walk on from the bulletin board...");
         WriteLine("* You encounter a mysterious (monster?) wearing a t-shirt that has the word 'GUIDE' on it.");
         WriteLine("Guy: Here for being a cheater or a mistake?");
-        Thread.Sleep(1000);
+        Thread.Sleep(10000);
         WriteLine("* What will you s-");
-        Thread.Sleep(500);
+        Thread.Sleep(8000);
         WriteLine("Guy: I really don't care to be honest.");
-        Thread.Sleep(500);
+        Thread.Sleep(8000);
         WriteLine("Guy: Anyway I'm Guy and if ya got any questions about THE INBETWEEN then don't feel free to ask because as i said i literally can't care less");
-        Thread.Sleep(500);
+        Thread.Sleep(5000);
         WriteLine("Guy: Anyway just don't cause trouble. all you can really do around here is sit and think about what you have done.. Or if your feeling adventurous then you can visit the 12 GATES OF REALITY");
-        Thread.Sleep(100);
+        Thread.Sleep(9000);
         WriteLine("Guy: Which reality did you come from anyway?");
         Thread.Sleep(5000);
         string prompt = "What will you say?";
@@ -357,7 +339,7 @@ int mercyCount = 0;
             case 0:
             Clear();
             WriteLine("Guy: Ahh, then you're probably a MISTAKE. Mistakes are entities who no-clip out of their realities and as a last resort from the universe, they end up here, in-order not to break space-time");
-            Thread.Sleep(1000);
+            Thread.Sleep(3000);
             SameOutcome();
             break;
 
@@ -414,9 +396,10 @@ int mercyCount = 0;
         {
             WriteLine("* The kids.. died.. How cruel...");
             killCount += 1;
+            coins += rand.Next(1,101);
             WriteLine("Press any key to continue..");
             ReadKey();
-            AfterGangKids();
+            GangKidsOutcome();
         }
         private void KidsMercyOutcome()
         {
@@ -424,11 +407,11 @@ int mercyCount = 0;
             mercyCount += 1;
             WriteLine("Press any key to continue..");
             ReadKey();
-            AfterGangKids();
+            GangKidsOutcome();
 
         }
 
-        private void AfterGangKids()
+        private void  GangKidsOutcome()
         {
             WriteLine("You continue walking...");
             Thread.Sleep(5000);
@@ -442,7 +425,7 @@ int mercyCount = 0;
             switch (selectedIndex)
             {
                 case 0:
-                EnterGatePrompt(RealityGateNo);
+                EnterGatePrompt(RealityGateNo, ending);
                 break;
 
                 case 1:
@@ -471,19 +454,34 @@ int mercyCount = 0;
             switch (selectedIndex)
             {
                 case 0:
-                killCount += 1;
-                WriteLine("BuB died");
-                // continue later
+                KillBuB();
+                SameBubOutcome();
                 break;
 
                 case 1:
-                mercyCount += 1;
-                WriteLine("You spared BuB");
-                //continue later
+                SpareBuB();
+                SameBubOutcome();
                 break;
             }            
         }
 
+        private void KillBuB()
+        {
+            killCount += 1;
+            WriteLine("BuB died");
+            coins += rand.Next(1,101);
+        }
+
+        private void SpareBuB()
+        {
+            mercyCount += 1;
+            WriteLine("You spared BuB");
+        }
+
+        private void SameBubOutcome()
+        {
+            WriteLine("You continue walking on..");
+        }
 
         private void EnterGatePrompt(int RealityGateNo, string ending)
         {
@@ -498,13 +496,21 @@ int mercyCount = 0;
             switch (selectedIndex)
             {
                 case 0:
+                BackgroundColor = ConsoleColor.White;
+                ForegroundColor = ConsoleColor.Black;
                 WriteLine($"* You have entered Reality Gate {RealityGateNo}");
                 WriteLine("* Your journey has come to an end..");
                 WriteLine($"You escaped THE INBETWEEN..\nYou now live in REALITY {RealityGateNo}.. REALITY OF LUCK");
+                Thread.Sleep(10000);
+                Clear();
+                Thread.Sleep(5000);
+                EndScreen3(ending, endingno);
+                Thread.Sleep(8000);
+                Credits();
                 break;
 
                 case 1:
-                AfterGangKids();
+                GangKidsOutcome();
                 break;
             }
         }
@@ -515,7 +521,7 @@ int mercyCount = 0;
         private void EndScreen1(string ending, int endingno)
         {
             ending = "Good Ending";
-            endingno = "1";
+            endingno = 1;
             WriteLine($"You have achieved {ending}\n\nEnding {endingno}");
 
         }
@@ -523,7 +529,7 @@ int mercyCount = 0;
         private void EndScreen2(string ending, int endingno)
         {
             ending = "Bad Ending";
-            endingno = "2";
+            endingno = 2;
             WriteLine($"You have achieved {ending}\n\nEnding {endingno}");
 
         }
@@ -531,7 +537,7 @@ int mercyCount = 0;
         private void EndScreen3(string ending, int endingno)
         {
             ending = "Freedom Ending";
-            endingno = "3";
+            endingno = 3;
             WriteLine($"You have achieved {ending}\n\nEnding {endingno}");
 
         }
@@ -539,7 +545,7 @@ int mercyCount = 0;
         private void EndScreen4(string ending, int endingno)
         {
             ending = "Genocide Ending";
-            endingno = "4";
+            endingno = 4;
             WriteLine($"You have achieved {ending}\n\nEnding {endingno}");
 
         }
@@ -547,27 +553,64 @@ int mercyCount = 0;
         private void EndScreen5(string ending, int endingno)
         {
             ending = "Merciful Ending";
-            endingno = "5";
+            endingno = 5;
             WriteLine($"You have achieved {ending}\n\nEnding {endingno}");
 
         }
 
+        private void Credits()
+        {
+            Write("Programming - Yand, ");
+            Thread.Sleep(2500);
+            Write("'story?' - Yand");
+            Thread.Sleep(2500);
+            WriteLine("Guy - Guy");
+        }
 
-        if (killCount == 6 && mercyCount == 0)
-        {
-            EndScreen4()
-        }
-        else if (killCount == 0 && mercyCount == 6)
-        {
-            EndScreen5();
-        }
-        else
-        {
-            EndScreen1();
-        }
-        
 
-    
+        private void DetermineEnding()
+        {
+            if (killCount == 10 & mercyCount == 0)
+            {
+                // Genocide Ending
+                WriteLine($"You have killed {killCount} entities and spared {mercyCount}.. and you ended your journey with {coins} coins");
+                Thread.Sleep(2500);
+                WriteLine("You have achieved the GENOCIDE ENDING");
+                Thread.Sleep(4000);
+                WriteLine("The Inbetween is now devoid of life. The Universe thanks you. your services will not be forgotten");
+                Thread.Sleep(25000);
+                ForegroundColor = ConsoleColor.Red;
+                WriteLine("You are the reincarnate of the devil");
+                ResetColor();
+            }
+            else if (mercyCount == 10 & killCount == 0)
+            {
+                // Merciful Ending
+                WriteLine($"You have spared {mercyCount} and killed {killCount}..");
+                Thread.Sleep(2500);
+                WriteLine("You have achieved the MERCIFUL ENDING");
+                Thread.Sleep(3000);
+                WriteLine("The Inbetween is much more lively and happy than it was before.");
+                Thread.Sleep(5000);
+                WriteLine("Your soul is pure. The Universe is proud");
+            }
+            else
+            {
+                // Good/Bad ending
+                WriteLine("Placeholder");
+            }
+        }
+
+        Random rand = new Random();
+        int coins = 0;
+        private void ItemShop()
+        {
+            //Item Shop
+        }
+
+    }
+
+
 
     class Program
     {
