@@ -1,3 +1,16 @@
+
+
+/*
+The Twelfth short, really bad console game by Yand
+Personal Deadline: 3/10/2022
+Deadline Achieved: N/A
+*/
+
+
+
+
+
+
 using System;
 using static System.Console;
 using static System.Threading.Thread;
@@ -230,7 +243,58 @@ private int mercyCount = 0;
                 WriteLine("You run around the woods looking for your things.\n\n\nYou run so quick that you bump into a tree and..");
                 Thread.Sleep(3000);
                 Clear();
-                
+                ForegroundColor = ConsoleColor.Yellow;
+                // WriteLine("Warning");
+                // Thread.Sleep(2000);
+                // Clear();
+                // Thread.Sleep(2000);
+                // WriteLine("Warning");
+                // Thread.Sleep(2000);
+                // Clear();
+                // Thread.Sleep(2000);
+                // WriteLine("Warning");
+                // Thread.Sleep(2000);
+                // Clear();
+                // Thread.Sleep(5000);
+                // Clear();
+                // ForegroundColor = ConsoleColor.Red;
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(1500);
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(1500);
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(1500);
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(1500);
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(1500);
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(1500);
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(1500);
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(1500);
+                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
+                // Thread.Sleep(1000);
+                // Clear();
+                // Thread.Sleep(5000);
+                ResetColor();
 
                 WriteLine("Successfully transported to THE INBETWEEN.");
                 Thread.Sleep(5000);
