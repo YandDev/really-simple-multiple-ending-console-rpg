@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using static System.Console;
 using static System.Threading.Thread;
 
@@ -490,6 +490,7 @@ int mercyCount = 0;
             RealityGateNo = 7;
             ending = "Freedom Ending";
             WriteLine("Warning! Entering any gate will mark the end of your journey. Are you sure you want to enter?\nYou will have to restart to discover other possible endings.");
+            Thread.Sleep(3000);
             string prompt = "Are you sure?";
             string[] options = {"Enter", "Nevermind..."};
             Menu EnterGateSure = new Menu(prompt, options);
