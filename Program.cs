@@ -1,9 +1,9 @@
 
 
 /*
-The Twelfth short, really bad console game by Yand
+The Twelfth short, really bad console game by Yassin
 Personal Deadline: 3/10/2022
-Deadline Achieved: N/A
+Deadline Achieved: no
 */
 
 
@@ -243,58 +243,7 @@ private int mercyCount = 0;
                 WriteLine("You run around the woods looking for your things.\n\n\nYou run so quick that you bump into a tree and..");
                 Thread.Sleep(3000);
                 Clear();
-                ForegroundColor = ConsoleColor.Yellow;
-                // WriteLine("Warning");
-                // Thread.Sleep(2000);
-                // Clear();
-                // Thread.Sleep(2000);
-                // WriteLine("Warning");
-                // Thread.Sleep(2000);
-                // Clear();
-                // Thread.Sleep(2000);
-                // WriteLine("Warning");
-                // Thread.Sleep(2000);
-                // Clear();
-                // Thread.Sleep(5000);
-                // Clear();
-                // ForegroundColor = ConsoleColor.Red;
-                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                // Thread.Sleep(1000);
-                // Clear();
-                // Thread.Sleep(1500);
-                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                // Thread.Sleep(1000);
-                // Clear();
-                // Thread.Sleep(1500);
-                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                // Thread.Sleep(1000);
-                // Clear();
-                // Thread.Sleep(1500);
-                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                // Thread.Sleep(1000);
-                // Clear();
-                // Thread.Sleep(1500);
-                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                // Thread.Sleep(1000);
-                // Clear();
-                // Thread.Sleep(1500);
-                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                // Thread.Sleep(1000);
-                // Clear();
-                // Thread.Sleep(1500);
-                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                // Thread.Sleep(1000);
-                // Clear();
-                // Thread.Sleep(1500);
-                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                // Thread.Sleep(1000);
-                // Clear();
-                // Thread.Sleep(1500);
-                // WriteLine("You have no-clipped outside of REALITY 12. Transporting to THE INBETWEEN");
-                // Thread.Sleep(1000);
-                // Clear();
-                // Thread.Sleep(5000);
-                ResetColor();
+                
 
                 WriteLine("Successfully transported to THE INBETWEEN.");
                 Thread.Sleep(5000);
@@ -326,6 +275,92 @@ private int mercyCount = 0;
                 }
 
     }
+   private void WaitUntilDusk()
+    {
+        
+                WriteLine("Time: Dusk");
+                Thread.Sleep(3000);
+                WriteLine("You fall asleep and fall off the cliff you were on");
+                Thread.Sleep(3000);
+                WriteLine("the air cracks beneath you as you enter the rift into THE INBETWEEN");
+                Thread.Sleep(3000);
+                Clear();
+                
+
+                WriteLine("Successfully transported to THE INBETWEEN.");
+                Thread.Sleep(5000);
+                Clear();
+                Thread.Sleep(2000);
+                
+                string prompt = "There is some sort of bulletin board..";
+                string[] options = {"Read the paper","Walk on..."};
+                Menu Inbetween1 = new Menu(prompt, options);
+                int selectedIndex = Inbetween1.Run();
+
+                switch (selectedIndex)
+                {
+                    case 0:
+                    WriteLine("You read the first paper\n\n\n");
+                    WriteLine("Welcome to THE INBETWEEN where all mistakes a cheaters can share one place..");
+                    WriteLine("What are cheaters, you ask? well, probably you. a cheater is one who cheats their way out of reality and, as a punishment, ends up in THE INBETWEEN..\n\nForever.");
+                    WriteLine("Have 'fun'\nYour's Truly,\nThe Universe");
+                    ReadKey();
+                    Clear();
+                    Thread.Sleep(2000);
+                    WalkOn();
+
+                    break;  
+
+                    case 1:
+                    WalkOn();
+                    break;
+                }
+
+    }
+
+   private void ExploreForest()
+    {
+        
+                WriteLine("You go on to explore the forest.");
+                Thread.Sleep(3000);
+                WriteLine("About 800 wild animals surround you");
+                Thread.Sleep(3000);
+                WriteLine("they all make different noises as a portal appears before you, transporting you into THE INBETWEEN");
+                Thread.Sleep(3000);
+                Clear();
+                
+
+                WriteLine("Successfully transported to THE INBETWEEN.");
+                Thread.Sleep(5000);
+                Clear();
+                Thread.Sleep(2000);
+                
+                string prompt = "There is some sort of bulletin board..";
+                string[] options = {"Read the paper","Walk on..."};
+                Menu Inbetween1 = new Menu(prompt, options);
+                int selectedIndex = Inbetween1.Run();
+
+                switch (selectedIndex)
+                {
+                    case 0:
+                    WriteLine("You read the first paper\n\n\n");
+                    WriteLine("Welcome to THE INBETWEEN where all mistakes a cheaters can share one place..");
+                    WriteLine("What are cheaters, you ask? well, probably you. a cheater is one who cheats their way out of reality and, as a punishment, ends up in THE INBETWEEN..\n\nForever.");
+                    WriteLine("Have 'fun'\nYour's Truly,\nThe Universe");
+                    ReadKey();
+                    Clear();
+                    Thread.Sleep(2000);
+                    WalkOn();
+
+                    break;  
+
+                    case 1:
+                    WalkOn();
+                    break;
+                }
+
+    }
+
 
     private void WalkOn()
     {
@@ -494,6 +529,8 @@ private int mercyCount = 0;
         private void SameBubOutcome()
         {
             WriteLine("You continue walking on..");
+            Thread.Sleep(2000);
+
         }
 
         private void EnterGatePrompt(int RealityGateNo, string ending)
@@ -523,10 +560,27 @@ private int mercyCount = 0;
                 break;
 
                 case 1:
-                GangKidsOutcome();
+                ScrewYou();
+                BackgroundColor = ConsoleColor.White;
+                ForegroundColor = ConsoleColor.Black;
+                WriteLine($"* You have entered Reality Gate {RealityGateNo}");
+                WriteLine("* Your journey has come to an end..");
+                WriteLine($"You escaped THE INBETWEEN..\nYou now live in REALITY {RealityGateNo}.. REALITY OF LUCK");
+                Thread.Sleep(10000);
+                Clear();
+                Thread.Sleep(5000);
+                EndScreen3(ending, endingno);
+                Thread.Sleep(8000);
+                Credits();
                 break;
             }
         }
+
+        private void ScrewYou()
+        {
+            WriteLine("LOL YOU REALLY THOUGHT YOU COULD CHOOSE YOUR PATH I AM NOT CODING MORE POSSIBLE CHOICES THAN THIS, GO TO REALITY 7 LOL");
+        }
+
 
         private string ending;
         private int endingno;
@@ -595,6 +649,7 @@ private int mercyCount = 0;
                 ForegroundColor = ConsoleColor.Red;
                 WriteLine("You are the reincarnate of the devil");
                 ResetColor();
+                RunMainMenu();
             }
             else if (mercyCount == 10 & killCount == 0)
             {
@@ -616,13 +671,8 @@ private int mercyCount = 0;
 
         Random rand = new Random();
         int coins = 0;
-        private void ItemShop()
-        {
-            //Item Shop
-        }
 
     }
-
 
 
     class Program
